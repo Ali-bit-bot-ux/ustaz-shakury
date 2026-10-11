@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>«Ұстаз – ұлы тұлға» | Салтанатты шақыру</title>
+  <meta name="description" content="Ұстаздар күніне орай «Ұстаз – ұлы тұлға» атты мерекелік концерттік бағдарламаға салтанатты шақыру қағазы.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+  <!-- Google Fonts for Kazakh Cyrillic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Marck+Script&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background decorative sparkles & ambient lights -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <!-- Mobile-first wrapper -->
+  <div class="app-viewport">
+
+    <!-- ========================================================
+         SCREEN 1: THE INTERACTIVE LUXURY ENVELOPE (WOW-EFFECT)
+         ======================================================== -->
+    <div id="envelopeScreen" class="envelope-screen">
+      <div class="envelope-wrapper">
+        <div class="envelope-header-text">
+          <span class="golden-tag">✦ Салтанатты шақыру ✦</span>
+          <h2 class="envelope-sub">Үлкен құрметпен</h2>
+        </div>
+
+        <div class="envelope-3d" id="envelope3D">
+          <!-- Back pocket background -->
+          <div class="env-back"></div>
+
+          <!-- Inside Letter Peek -->
+          <div class="env-letter-peek" id="letterPeek">
+            <div class="peek-ornament">⚜</div>
+            <div class="peek-title">«Ұстаз – ұлы тұлға»</div>
+            <div class="peek-sub">Мерекелік шақыру</div>
+          </div>
+
+          <!-- Flaps -->
+          <div class="env-flap env-bottom">
+            <div class="bottom-flourish">
+              <span class="envelope-quote">✨ Ұстазға құрмет – ұрпаққа өнеге! ❤️</span>
+            </div>
+          </div>
+          <div class="env-flap env-left"></div>
+          <div class="env-flap env-right"></div>
+          <div class="env-flap env-top" id="topFlap">
+            <div class="top-ornament">
+              <svg width="48" height="24" viewBox="0 0 100 50" fill="none" stroke="currentColor">
+                <path d="M10 25 Q50 0 90 25 M30 35 Q50 20 70 35" stroke-width="2" stroke="#d4af37"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Royal Wax Seal (Сургуч мөр) Button -->
+          <div class="wax-seal-container" id="waxSealBtn" role="button" aria-label="Конвертті ашу" tabindex="0">
+            <div class="wax-seal">
+              <div class="seal-ring"></div>
+              <div class="seal-inner">
+                <div class="seal-emblem">⚜</div>
+                <span class="seal-text">АШЫҢЫЗ</span>
+              </div>
+            </div>
+            <div class="seal-pulse"></div>
+            <div class="tap-hint">Мөрді басыңыз</div>
+          </div>
+        </div>
+
+        <div class="envelope-footer-msg">
+          <p>Жуалы ауданының білім бөлімінің Аула клубы</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         SCREEN 2: THE MAIN INVITATION CONTENT (APPEARS AFTER OPENING)
+         ======================================================== -->
+    <main id="invitationContent" class="invitation-content hidden">
+
+      <!-- Floating audio / controls bar -->
+      <nav class="top-nav-bar">
+        <button id="soundToggleBtn" class="nav-round-btn" aria-label="Дыбысты қосу/өшіру">
+          <span id="soundIcon">🔔</span>
+        </button>
+        <span class="nav-branding">«Аула клубы» КММ</span>
+        <button id="shareBtn" class="nav-round-btn" aria-label="Бөлісу">
+          <span>📤</span>
+        </button>
+      </nav>
+
+      <!-- HERO SECTION -->
+      <section class="card-hero" id="heroSection">
+        <div class="gold-corner top-left"></div>
+        <div class="gold-corner top-right"></div>
+        <div class="gold-corner bottom-left"></div>
+        <div class="gold-corner bottom-right"></div>
+
+        <div class="badge-org">
+          <span>Жамбыл облысы әкімдігінің білім басқармасы</span>
+          <strong>«Жуалы ауданының білім бөлімінің Аула клубы» КММ</strong>
+        </div>
+
+        <div class="divider-flourish">
+          <span class="line"></span>
+          <span class="symbol">⚜ ✦ ⚜</span>
+          <span class="line"></span>
+        </div>
+
+        <p class="hero-kicker">Ұстаздар күніне арналған салтанатты кеш</p>
+        <h1 class="hero-main-title">Ұстаз – ұлы тұлға</h1>
+        <p class="hero-script-lead">Мерекелік концерттік бағдарлама</p>
+
+        <!-- Slogan Banner -->
+        <div class="slogan-badge">
+          <span class="star-icon">✨</span>
+          <p class="slogan-text">Ұстазға құрмет – ұрпаққа өнеге! ❤️❤️❤️</p>
+          <span class="star-icon">✨</span>
+        </div>
+
+        <!-- Hero Emblematics / Graphic Presentation -->
+        <div class="hero-art-frame">
+          <div class="art-backdrop"></div>
+          <div class="art-content">
+            <div class="golden-crest">
+              <svg viewBox="0 0 120 120" width="90" height="90" fill="none">
+                <!-- Book and Sun rays emblem -->
+                <circle cx="60" cy="60" r="54" stroke="#d4af37" stroke-width="2" stroke-dasharray="4 2"/>
+                <circle cx="60" cy="60" r="48" stroke="#d4af37" stroke-width="1"/>
+                <path d="M60 22 L60 30 M32 32 L38 38 M88 32 L82 38 M22 60 L30 60 M98 60 L90 60" stroke="#d4af37" stroke-width="2"/>
+                <!-- Open Book -->
+                <path d="M60 76 C50 68 35 68 28 72 L28 44 C35 40 50 40 60 48 C70 40 85 40 92 44 L92 72 C85 68 70 68 60 76 Z" fill="#5a121e" stroke="#d4af37" stroke-width="2"/>
+                <path d="M60 48 L60 76" stroke="#d4af37" stroke-width="2"/>
+                <!-- Feather pen -->
+                <path d="M66 38 C75 30 84 28 86 28 C86 32 82 40 76 44 L66 48" stroke="#d4af37" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <div class="hero-date-highlight">
+              <span class="date-month">ҚАЗАН АЙЫ</span>
+              <span class="date-day">ҰСТАЗДАР КҮНІ</span>
+              <span class="date-year">САЛТАНАТТЫ ЖИЫН</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRIBUTE & CONGRATULATION LETTER SECTION -->
+      <section class="section-card tribute-section">
+        <div class="card-ornament-header">
+          <span class="ornament-leaf">❦</span>
+          <h3>Ардақты Ұстаздарға тағзым</h3>
+          <span class="ornament-leaf">❦</span>
+        </div>
+
+        <div class="tribute-body">
+          <p class="lead-paragraph">
+            Жамбыл облысы әкімдігінің білім басқармасы <strong>“Жуалы ауданының білім бөлімінің Аула клубы”</strong> коммуналдық мемлекеттік мекемесінде, Ұстаздар күніне орай <em>«Ұстаз – ұлы тұлға»</em> атты мерекелік концерттік бағдарламамызға мекемеміздің ардагер ұстаздарын арнайы барып шақыру қағаздары таратылды.
+          </p>
+
+          <blockquote class="highlight-quote">
+            <span class="quote-mark">“</span>
+            <p>
+              ✨ Білім мен тәрбие жолында еңбек етіп, мекемеміздің дамуына үлес қосқан ардагер ұстаздарымыздың орны біз үшін ерекше. Ұстаздық жолдағы еселі еңбектері мен өнегелі өмірлері – кейінгі буынға үлгі, жас ұрпаққа тағылым.
+            </p>
+          </blockquote>
+
+          <div class="heartfelt-blessing">
+            <span class="sparkle">✨</span>
+            <p class="blessing-text">
+              Ұстаз есімі – ұлы есім! Еңбектеріңіз еленіп, абыройларыңыз асқақтай берсін, ардақты ұстаздар!
+            </p>
+            <span class="sparkle">✨</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIMELINE / PROGRAMME OF THE DAY -->
+      <section class="section-card timeline-section">
+        <div class="card-ornament-header">
+          <span class="ornament-leaf">✦</span>
+          <h3>Мерекелік бағдарлама</h3>
+          <span class="ornament-leaf">✦</span>
+        </div>
+        <p class="section-subtitle">Салтанатты кештің реттік жоспары</p>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-badge">
+              <span class="timeline-time">14:30</span>
+            </div>
+            <div class="timeline-content">
+              <div class="item-icon">💐</div>
+              <div class="item-info">
+                <h4>Қонақтарды қарсы алу</h4>
+                <p>Құрметті меймандар мен ардагер ұстаздарды құрметпен күтіп алу</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-badge">
+              <span class="timeline-time">15:00</span>
+            </div>
+            <div class="timeline-content">
+              <div class="item-icon">🎭</div>
+              <div class="item-info">
+                <h4>Салтанатты концерт</h4>
+                <p>«Ұстаз – ұлы тұлға» атты мерекелік концерттік бағдарламаның ашылуы</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-badge">
+              <span class="timeline-time">15:40</span>
+            </div>
+            <div class="timeline-content">
+              <div class="item-icon">🎖️</div>
+              <div class="item-info">
+                <h4>Құрмет пен марапат</h4>
+                <p>Ардагер ұстаздарға ілтипат білдіру, марапаттау және естелік сыйлықтар табыстау</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-badge">
+              <span class="timeline-time">16:20</span>
+            </div>
+            <div class="timeline-content">
+              <div class="item-icon">☕</div>
+              <div class="item-info">
+                <h4>Естелік сурет & Ақ дастархан</h4>
+                <p>Естелік фотосессия және мерекелік шай ішу, жылы естеліктермен бөлісу</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCATION & ADDRESS SECTION -->
+      <section class="section-card location-section">
+        <div class="card-ornament-header">
+          <span class="ornament-leaf">📍</span>
+          <h3>Өтетін орны</h3>
+          <span class="ornament-leaf">📍</span>
+        </div>
+
+        <div class="location-details">
+          <div class="venue-title">«Аула клубы» КММ ғимараты</div>
+          <p class="venue-address">Жамбыл облысы, Жуалы ауданы</p>
+          <p class="venue-note">Барлық ардагер ұстаздарымыз бен құрметті қонақтарды асыға күтеміз!</p>
+
+          <div class="map-actions">
+            <a href="https://2gis.kz" target="_blank" rel="noopener" class="btn-primary map-btn">
+              <span class="btn-icon">🗺️</span>
+              <span>Картадан көру (2GIS)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- DRESS-CODE SECTION -->
+      <section class="section-card dresscode-section">
+        <div class="card-ornament-header">
+          <span class="ornament-leaf">👔</span>
+          <h3>Киім үлгісі (Dress-Code)</h3>
+          <span class="ornament-leaf">👗</span>
+        </div>
+
+        <p class="dresscode-text">
+          Салтанатты кештің мәртебесіне орай келесі киім үлгісі ұсынылады:
+        </p>
+
+        <div class="dresscode-badges">
+          <div class="dc-badge">
+            <span class="badge-title">Мырзалар үшін</span>
+            <span class="badge-desc">Классикалық костюм</span>
+          </div>
+          <div class="dc-badge">
+            <span class="badge-title">Айымдар үшін</span>
+            <span class="badge-desc">Салтанатты көйлек / костюм</span>
+          </div>
+        </div>
+
+        <!-- Color Palette Swatches -->
+        <div class="color-palette-wrap">
+          <span class="palette-label">Кештің үйлесімді түстер палитрасы:</span>
+          <div class="color-swatches">
+            <div class="swatch s-marsala" title="Бордо / Марсала"><span>Марсала</span></div>
+            <div class="swatch s-gold" title="Салтанатты Алтын"><span>Алтын</span></div>
+            <div class="swatch s-ivory" title="Піл сүйегі"><span>Ақшыл</span></div>
+            <div class="swatch s-rose" title="Сұрғылт раушан"><span>Пудра</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RSVP CONFIRMATION FORM -->
+      <section class="section-card rsvp-section">
+        <div class="card-ornament-header">
+          <span class="ornament-leaf">✉️</span>
+          <h3>Қатысуды растау</h3>
+          <span class="ornament-leaf">✉️</span>
+        </div>
+
+        <form id="rsvpForm" class="rsvp-form" onsubmit="event.preventDefault(); handleRsvpSubmit();">
+          <p class="form-prompt">Мерекелік кешке қатыса аласыз ба?</p>
+
+          <div class="radio-group">
+            <label class="custom-radio">
+              <input type="radio" name="attendance" value="Иә, міндетті түрде қатысамын" checked>
+              <span class="radio-mark"></span>
+              <span class="radio-label">Иә, міндетті түрде қатысамын</span>
+            </label>
+
+            <label class="custom-radio">
+              <input type="radio" name="attendance" value="Өкінішке орай, қатыса алмаймын">
+              <span class="radio-mark"></span>
+              <span class="radio-label">Өкінішке орай, қатыса алмаймын</span>
+            </label>
+          </div>
+
+          <div class="input-field-group">
+            <label for="guestName">Сіздің аты-жөніңіз:</label>
+            <input type="text" id="guestName" name="guestName" placeholder="Толық аты-жөніңізді жазыңыз" required>
+          </div>
+
+          <button type="submit" class="btn-primary submit-btn" id="submitBtn">
+            <span>ЖАУАПТЫ ЖІБЕРУ</span>
+            <span class="arrow">➜</span>
+          </button>
+
+          <div id="rsvpSuccessMsg" class="rsvp-success-msg hidden">
+            <span class="check-icon">✓</span>
+            <h4>Рақмет! Сіздің жауабыңыз қабылданды.</h4>
+            <p>Салтанатты кеште жүздескенше!</p>
+          </div>
+        </form>
+      </section>
+
+      <!-- ========================================================
+           SCREEN SECTION: VIDEO TRIBUTE (IMG_5669.MP4)
+           ======================================================== -->
+      <section class="section-card video-section" id="videoSection">
+        <div class="card-ornament-header">
+          <span class="ornament-leaf">🎬</span>
+          <h3>Арнайы шақыру сәті</h3>
+          <span class="ornament-leaf">🎬</span>
+        </div>
+        <p class="section-subtitle">Мекемеміздің ардагер ұстаздарын арнайы барып шақыру барысынан бейнебаян</p>
+
+        <div class="video-card-container">
+          <div class="video-frame-border">
+            <video 
+              id="tributeVideo" 
+              class="tribute-video"
+              playsinline 
+              controls
+              preload="metadata"
+              poster="assets/video_poster.jpg">
+              <source src="assets/video.mp4" type="video/mp4">
+              Сіздің браузеріңіз видеоны қолдамайды.
+            </video>
+          </div>
+
+          <div class="video-meta-caption">
+            <div class="caption-icon">✨</div>
+            <p>Ұстаздарымыздың шынайы қуанышы мен ақ батасы – біз үшін мәңгілік шабыт!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HASHTAGS & SOCIAL FOOTER -->
+      <footer class="section-card footer-section">
+        <div class="hashtags-box">
+          <span class="hashtag">#ҰстазҰлыТұлға</span>
+          <span class="hashtag">#ҰстаздарКүні</span>
+          <span class="hashtag">#АрдагерҰстаздар</span>
+          <span class="hashtag">#ҰстазғаҚұрмет</span>
+        </div>
+
+        <div class="divider-flourish">
+          <span class="line"></span>
+          <span class="symbol">⚜</span>
+          <span class="line"></span>
+        </div>
+
+        <div class="footer-contacts">
+          <p class="org-name">«Жуалы ауданының білім бөлімінің Аула клубы» КММ</p>
+          <div class="contact-links">
+            <a href="https://wa.me/" class="contact-btn wa-btn" target="_blank" rel="noopener">
+              <span>💬 WhatsApp арқылы байланыс</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="copyright-note">© 2026 Барлық құқықтар қорғалған</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
